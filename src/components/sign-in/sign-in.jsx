@@ -4,6 +4,7 @@ import { content2 } from '../../static';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { Link } from 'react-router-dom';
 
 const schema = yup.object().shape({
 
@@ -61,7 +62,8 @@ const SignIn = () => {
 
             <button>SIGN IN</button>
         </form>
-        <p>Don't have an account? Sign up</p>
+        <p>Don't have an account?<Link to="/signup"></Link> Sign up</p>
+        <p><Link to="/">Home</Link></p>
     </div>
   )
 }

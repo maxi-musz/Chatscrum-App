@@ -4,6 +4,7 @@ import {content} from '../../static/index.js';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { Link } from 'react-router-dom';
 
 
 
@@ -60,7 +61,8 @@ const SignUp = () => {
 
             <button>Sign Up</button>
         </form>
-        <p>Have an account? Sign In</p>
+        <p>Have an account? <Link to="signin"></Link>Sign In</p>
+        <p><Link to="/">Home</Link></p>
     </div>
     );
 }
