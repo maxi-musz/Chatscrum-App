@@ -1,6 +1,6 @@
 import React from 'react';
 import "./sign-up.css";
-import content from '../../static/index.js';
+import {content} from '../../static/index.js';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";

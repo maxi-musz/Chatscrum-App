@@ -20,4 +20,24 @@ const content = {
 
 }
 
-export default content;
+const content2 = {
+    inputs: [
+        {
+            label: "Email",
+            name: "email",
+            type: "email"
+        },
+        {
+            label: "Password",
+            name: "password",
+            type: "password"
+        },
+        {
+            label: "Project Name",
+            name: "project",
+            type: "text"
+        }
+    ]
+}
+
+export { content, content2 }
